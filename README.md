@@ -1,14 +1,13 @@
 # nghiem-javascript-snippets README
 
-This is the README for your extension "nghiem-javascript-snippets". After writing up a brief description, we recommend including the following sections.
-
+This is the README for your extension "nghiem-javascript-snippets".
 ## Features
 
-
+A collection of javascript and react snippets for faster JavaScript development in Visual studio Code.
 
 ## Requirements
 
-Snippets are optimized to be short and easy to remember.
+Snippets are optimized to be short and easy to remember. ;:"))
 
 Below is a list of all available snippets and the triggers of each one. The **⇥** means the `TAB` key.
 
