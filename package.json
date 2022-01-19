@@ -6,9 +6,16 @@
     },
     "homepage": "https://github.com/tranhuunghiem99/nghiem-javascript-snippets.git",
     "name": "nghiem-javascript-snippets",
-    "displayName": "nghiem-javascript-snippets",
+    "displayName": "Nghiem Javascript Snippets",
     "description": "Speed code JS by Dr.Nghiem",
     "version": "1.0.0",
+    "publisher": "TranHuuNghiem",
+    "icon": "images/nghiemjs.png",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nathanchapman/vscode-javascript-snippets"
+    },
     "engines": {
         "vscode": "^1.63.0"
     },
