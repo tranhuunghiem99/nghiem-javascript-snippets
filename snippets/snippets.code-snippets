@@ -1,0 +1,492 @@
+{
+    
+	"var statement": {
+		"prefix": "v",
+		"body": "var ${0}",
+		"description": "var statement nghiem-js"
+	},
+	"var assignment": {
+		"prefix": "v=",
+		"body": "var ${1:name} = ${2:value};",
+		"description": "var assignment nghiem-js"
+	},
+	"let statement": {
+		"prefix": "l",
+		"body": "let ${0}",
+		"description": "let statement nghiem-js"
+	},
+	"let assignment": {
+		"prefix": "l=",
+		"body": "let ${1:name} = ${2:value};",
+		"description": "let assignment nghiem-js"
+	},
+	"destructuring let assignment": {
+		"prefix": "dl=",
+		"body": "let {${1:name}} = ${2:value};",
+		"description": "destructuring let assignment nghiem-js"
+	},
+	"const statement": {
+		"prefix": "co",
+		"body": "const ${0}",
+		"description": "const statement nghiem-js"
+	},
+	"const assignment": {
+		"prefix": "co=",
+		"body": "const ${1:name} = ${2:value};",
+		"description": "const assignment nghiem-js"
+	},
+	"destructuring const assignment": {
+		"prefix": "dco=",
+		"body": "const {${1:name}} = ${2:value};",
+		"description": "destructuring const assignment nghiem-js"
+	},
+	
+	"if statement": {
+		"prefix": "if",
+		"body": "if (${1:condition}) {\n\t${0}\n}",
+		"description": "if statement nghiem-js"
+	},
+	"else statement": {
+		"prefix": "el",
+		"body": "else {\n\t${0}\n}",
+		"description": "else statement nghiem-js"
+	},
+	"if/else statement": {
+		"prefix": "ife",
+		"body": "if (${1:condition}) {\n\t${0}\n} else {\n\t\n}",
+		"description": "if/else statement nghiem-js"
+	},
+	"else if statement": {
+		"prefix": "ei",
+		"body": "else if (${1:condition}) {\n\t${0}\n}",
+		"description": "else if statement nghiem-js"
+	},
+	"ternary operator": {
+		"prefix": "ter",
+		"body": "${1:condition} ? ${2:expression} : ${3:expression};",
+		"description": "ternary operator nghiem-js"
+	},
+	"for loop": {
+		"prefix": "fl",
+		"body": "for (let ${1:i} = 0, ${2:len} = ${3:iterable}.length; ${1:i} < ${2:len}; ${1:i}++) {\n\t${0}\n}",
+		"description": "for loop nghiem-js"
+	},
+	"reverse for loop": {
+		"prefix": "rfl",
+		"body": "for (let ${1:i} = ${2:iterable}.length - 1; ${1:i} >= 0; ${1:i}--) {\n\t${0}\n}",
+		"description": "reverse for loop nghiem-js"
+	},
+	"for in loop": {
+		"prefix": "fi",
+		"body": "for (let ${1:key} in ${2:array}) {\n\tif (${2:array}.hasOwnProperty(${1:key})) {\n\t\t${0}\n\t}\n}",
+		"description": "for in loop nghiem-js"
+	},
+	"for of loop (ES6)": {
+		"prefix": "fo",
+		"body": "for (let ${1:key} of ${2:array}) {\n\t${0}\n}",
+		"description": "for of loop (ES6) nghiem-js"
+	},
+	"while loop": {
+		"prefix": "wl",
+		"body": "while (${1:condition}) {\n\t${0}\n}",
+		"description": "while loop nghiem-js"
+	},
+	"try/catch": {
+		"prefix": "tc",
+		"body": "try {\n\t${0}\n} catch (${1:err}) {\n\t\n}",
+		"description": "try/catch nghiem-js"
+	},
+	"try/finally": {
+		"prefix": "tf",
+		"body": "try {\n\t${0}\n} finally {\n\t\n}",
+		"description": "try/finally nghiem-js"
+	},
+	"try/catch/finally": {
+		"prefix": "tcf",
+		"body": "try {\n\t${0}\n} catch (${1:err}) {\n\t\n} finally {\n\t\n}",
+		"description": "try/catch/finally nghiem-js"
+	},
+	"switch case": {
+		"prefix": "sw",
+		"body": "switch (${1:expr}) {\n\tcase ${2:value}:\n\t\treturn $0;\n\tdefault:\n\t\treturn;\n}",
+		"description": "switch case nghiem-js"
+	},
+  
+	"anonymous function": {
+		"prefix": "f",
+		"body": "function (${1:arguments}) {\n\t${0}\n}",
+		"description": "anonymous function nghiem-js"
+	},
+	"named function": {
+		"prefix": "fn",
+		"body": "function ${1:name}(${2:arguments}) {\n\t${0}\n}",
+		"description": "named function nghiem-js"
+	},
+	"immediately-invoked function expression (IIFE)": {
+		"prefix": "iife",
+		"body": "((${1:arguments}) => {\n\t${0}\n})(${2});",
+		"description": "immediately-invoked function expression (IIFE) nghiem-js"
+	},
+	"function apply": {
+		"prefix": "fa",
+		"body": "${1:fn}.apply(${2:this}, ${3:arguments})",
+		"description": "function apply nghiem-js"
+	},
+	"function call": {
+		"prefix": "fc",
+		"body": "${1:fn}.call(${2:this}, ${3:arguments})",
+		"description": "function call nghiem-js"
+	},
+	"function bind": {
+		"prefix": "fb",
+		"body": "${1:fn}.bind(${2:this}, ${3:arguments})",
+		"description": "function bind nghiem-js"
+	},
+	"arrow function (ES6)": {
+		"prefix": "af",
+		"body": "(${1:arguments}) => ${2:statement}",
+		"description": "arrow function (ES6) nghiem-js"
+	},
+	"arrow function with body (ES6)": {
+		"prefix": "afb",
+		"body": "(${1:arguments}) => {\n\t${0}\n}",
+		"description": "arrow function with body (ES6) nghiem-js"
+	},
+	"generator function (ES6)": {
+		"prefix": "gf",
+		"body": "function* (${1:arguments}) {\n\t${0}\n}",
+		"description": "generator function (ES6) nghiem-js"
+	},
+	"named generator function (ES6)": {
+		"prefix": "gfn",
+		"body": "function* ${1:name}(${2:arguments}) {\n\t${0}\n}",
+		"description": "named generator function (ES6) nghiem-js"
+	},
+	
+	"sequence of 0..n": {
+		"prefix": "seq",
+		"body": "[...Array(${1:length}).keys()]${0}",
+		"description": "sequence of 0..n nghiem-js"
+	},
+	"forEach loop": {
+		"prefix": "fe",
+		"body": "${1}.forEach((${2:item}) => {\n\t${0}\n});",
+		"description": "forEach loop nghiem-js"
+	},
+	"map": {
+		"prefix": "map",
+		"body": "${1}.map((${2:item}) => {\n\t${0}\n});",
+		"description": "map nghiem-js"
+	},
+	"reduce": {
+		"prefix": "reduce",
+		"body": "${1}.reduce((${2:previous}, ${3:current}) => {\n\t${0}\n}${4:, initial});",
+		"description": "reduce nghiem-js"
+	},
+	"filter": {
+		"prefix": "filter",
+		"body": "${1}.filter(${2:item} => {\n\t${0}\n});",
+		"description": "filter nghiem-js"
+	},
+	"find": {
+		"prefix": "find",
+		"body": "${1}.find(${2:item} => {\n\t${0}\n});",
+		"description": "find nghiem-js"
+	},
+   
+	"object literal": {
+		"prefix": "ol",
+		"body": "{\n\tkv${0}\n};",
+		"description": "object literal nghiem-js"
+	},
+	"same-line object literal": {
+		"prefix": "slol",
+		"body": "{ kv${0} };",
+		"description": "same-line object literal nghiem-js"
+	},
+	"key/value pair": {
+		"prefix": "kv",
+		"body": "${1:key}: ${2:value},",
+		"description": "key/value pair nghiem-js"
+	},
+	"class (ES6)": {
+		"prefix": "c",
+		"body": "class ${1:name} {\n\tconstructor(${2:arguments}) {\n\t\t${0}\n\t}\n}",
+		"description": "class (ES6) nghiem-js"
+	},
+	"child class (ES6)": {
+		"prefix": "cex",
+		"body": "class ${1:name} extends ${2:base} {\n\tconstructor(${3:arguments}) {\n\t\tsuper(${3:arguments});\n\t\t${0}\n\t}\n}",
+		"description": "child class (ES6) nghiem-js"
+	},
+	"class constructor (ES6)": {
+		"prefix": "ctor",
+		"body": "constructor(${1:arguments}) {\n\tsuper(${1:arguments});${0}\n}",
+		"description": "class constructor (ES6) nghiem-js"
+	},
+	"method (ES6 syntax)": {
+		"prefix": "m",
+		"body": "${1:method}(${2:arguments}) {\n\t${0}\n}",
+		"description": "method (ES6 syntax) nghiem-js"
+	},
+	"getter (ES6 syntax)": {
+		"prefix": "get",
+		"body": "get ${1:property}() {\n\t${0}\n}",
+		"description": "getter (ES6 syntax) nghiem-js"
+	},
+	"setter (ES6 syntax)": {
+		"prefix": "set",
+		"body": "set ${1:property}(${2:value}) {\n\t${0}\n}",
+		"description": "setter (ES6 syntax) nghiem-js"
+	},
+	"getter and setter (ES6 syntax)": {
+		"prefix": "gs",
+		"body": "get ${1:property}() {\n\t${0}\n}\nset ${1:property}(${2:value}) {\n\t\n}",
+		"description": "getter and setter (ES6 syntax) nghiem-js"
+	},
+	"prototypal constructor": {
+		"prefix": "pctor",
+		"body": "var ${1:Class} = function(${2:arguments}) {\n\t${0}\n};",
+		"description": "prototypal constructor nghiem-js"
+	},
+	"prototype method": {
+		"prefix": "proto",
+		"body": "${1:Class}.prototype.${2:method} = function(${3:arguments}) {\n\t${0}\n};",
+		"description": "prototype method nghiem-js"
+	},
+	"Object.assign": {
+		"prefix": "oa",
+		"body": "Object.assign(${1:dest}, ${2:source})",
+		"description": "Object.assign nghiem-js"
+	},
+	"Object.assign copy (shallow clone)": {
+		"prefix": "oc",
+		"body": "Object.assign({}, ${1:original}, ${2:source})",
+		"description": "Object.assign copy (shallow clone) nghiem-js"
+	},
+	
+	"return": {
+		"prefix": "r",
+		"body": "return ${0};",
+		"description": "return nghiem-js"
+	},
+	"return Promise (ES6)": {
+		"prefix": "rp",
+		"body": "return new Promise((resolve, reject) => {\n\t${0}\n});",
+		"description": "return Promise (ES6) nghiem-js"
+	},
+	"return complex value (such as JSX components)": {
+		"prefix": "rc",
+		"body": "return (\n\t${0}\n);",
+		"description": "return complex value (such as JSX components) nghiem-js"
+	},
+	
+	"typeof": {
+		"prefix": "tof",
+		"body": "typeof ${1:source} === '${2:undefined}'",
+		"description": "typeof nghiem-js"
+	},
+	"instanceof": {
+		"prefix": "iof",
+		"body": "${1:source} instanceof ${2:Object}",
+		"description": "instanceof nghiem-js"
+	},
+	
+	"Promise (ES6)": {
+		"prefix": "pr",
+		"body": "new Promise((resolve, reject) => {\n\t${0}\n})",
+		"description": "Promise (ES6) nghiem-js"
+	},
+	"Promise.then": {
+		"prefix": "then",
+		"body": "${1:promise}.then((${2:value}) => {\n\t${0}\n})",
+		"description": "Promise.then nghiem-js"
+	},
+	"Promise.catch": {
+		"prefix": "catch",
+		"body": "${1:promise}.catch((${2:err}) => {\n\t${0}\n})",
+		"description": "Promise.catch nghiem-js"
+	},
+  
+	"export (ES6)": {
+		"prefix": "ex",
+		"body": "export ${1:member};",
+		"description": "export (ES6) nghiem-js"
+	},
+	"export default (ES6)": {
+		"prefix": "exd",
+		"body": "export default ${1:member};",
+		"description": "export default (ES6) nghiem-js"
+	},
+	"import module (ES6)": {
+		"prefix": "im",
+		"body": "import ${1:*} from '${2:module}';",
+		"description": "import module (ES6) nghiem-js"
+	},
+	"import module as (ES6)": {
+		"prefix": "ima",
+		"body": "import ${1:*} as ${2:name} from '${3:module}';",
+		"description": "import module as (ES6) nghiem-js"
+	},
+  
+	"Node.js style callback": {
+		"prefix": "cb",
+		"body": "(err, ${1:value}) => {${0}}",
+		"description": "Node.js style callback nghiem-js"
+	},
+	"require": {
+		"prefix": "re",
+		"body": "require('${1:module}');",
+		"description": "require nghiem-js"
+	},
+	"require local": {
+		"prefix": "rel",
+		"body": "require('./${1:module}');",
+		"description": "require local nghiem-js"
+	},
+	"require assignment": {
+		"prefix": "req",
+		"body": "const ${1:module} = require('${1:module}');",
+		"description": "require assignment nghiem-js"
+	},
+	"require assignment local": {
+		"prefix": "reql",
+		"body": "const ${1:module} = require('./${1:module}');",
+		"description": "require assignment local nghiem-js"
+	},
+	"destructuring require assignment": {
+		"prefix": "dreq",
+		"body": "const {${1:module}} = require('${1:module}');",
+		"description": "destructuring require assignment nghiem-js"
+	},
+	"destructuring require assignment local": {
+		"prefix": "dreql",
+		"body": "const {${1:module}} = require('./${1:module}');",
+		"description": "destructuring require assignment local nghiem-js"
+	},
+	"exports.member": {
+		"prefix": "em",
+		"body": "exports.${1:member} = ${2:value};",
+		"description": "exports.member nghiem-js"
+	},
+	"module.exports": {
+		"prefix": "me",
+		"body": "module.exports = ${1:name};",
+		"description": "module.exports nghiem-js"
+	},
+	"module exports object": {
+		"prefix": "meo",
+		"body": "module.exports = {\n\t${1:member}\n};",
+		"description": "module exports object nghiem-js"
+	},
+	"event handler": {
+		"prefix": "on",
+		"body": "${1:emitter}.on('${2:event}', (${3:arguments}) => {\n\t${0}\n});",
+		"description": "event handler nghiem-js"
+	},
+  
+	"describe": {
+		"prefix": "desc",
+		"body": "describe('${1:description}', () => {\n\t${0}\n});",
+		"description": "describe nghiem-js"
+	},
+	"context": {
+		"prefix": "cont",
+		"body": "context('${1:description}', () => {\n\t${0}\n});",
+		"description": "context nghiem-js"
+	},
+	"it": {
+		"prefix": "it",
+		"body": "it('${1:description}', () => {\n\t${0}\n});",
+		"description": "it nghiem-js"
+	},
+	"it synchronous": {
+		"prefix": "its",
+		"body": "it('${1:description}', () => {\n\t${0}\n});",
+		"description": "it synchronous nghiem-js"
+	},
+	"it asynchronous": {
+		"prefix": "ita",
+		"body": "it('${1:description}', (done) => {\n\t${0}\n\tdone();\n});",
+		"description": "it asynchronous nghiem-js"
+	},
+	"before test suite": {
+		"prefix": "bf",
+		"body": "before(() => {\n\t${0}\n});",
+		"description": "before test suite nghiem-js"
+	},
+	"before each test": {
+		"prefix": "bfe",
+		"body": "beforeEach(() => {\n\t${0}\n});",
+		"description": "before each test nghiem-js"
+	},
+	"after test suite": {
+		"prefix": "aft",
+		"body": "after(() => {\n\t${0}\n});",
+		"description": "after test suite nghiem-js"
+	},
+	"after each test": {
+		"prefix": "afe",
+		"body": "afterEach(() => {\n\t${0}\n});",
+		"description": "after each test nghiem-js"
+	},
+  
+	"console.log": {
+		"prefix": "cl",
+		"body": "console.log(${0});",
+		"description": "console.log nghiem-js"
+	},
+	"console.error": {
+		"prefix": "ce",
+		"body": "console.error(${0});",
+		"description": "console.error nghiem-js"
+	},
+	"console.warn": {
+		"prefix": "cw",
+		"body": "console.warn(${0});",
+		"description": "console.warn nghiem-js"
+	},
+	"console.log labeled": {
+		"prefix": "cll",
+		"body": "console.log('${0}', ${0});",
+		"description": "console.log labeled nghiem-js"
+	},
+	"console.error labeled": {
+		"prefix": "cel",
+		"body": "console.error('${0}', ${0});",
+		"description": "console.error labeled nghiem-js"
+	},
+	"console.warn labeled": {
+		"prefix": "cwl",
+		"body": "console.warn('${0}', ${0});",
+		"description": "console.warn labeled nghiem-js"
+	},
+  
+	"setTimeout": {
+		"prefix": "st",
+		"body": "setTimeout(() => {\n\t${0}\n}, ${1:delay});",
+		"description": "setTimeout nghiem-js"
+	},
+	"setInterval": {
+		"prefix": "si",
+		"body": "setInterval(() => {\n\t${0}\n}, ${1:delay});",
+		"description": "setInterval nghiem-js"
+	},
+	"setImmediate": {
+		"prefix": "sim",
+		"body": "setImmediate(() => {\n\t${0}\n});",
+		"description": "setImmediate nghiem-js"
+	},
+	"process nextTick": {
+		"prefix": "nt",
+		"body": "process.nextTick(() => {\n\t${0}\n});",
+		"description": "process nextTick nghiem-js"
+	},
+  
+	"insert 'use strict' statement": {
+		"prefix": "us",
+		"body": "'use strict';",
+		"description": "insert 'use strict' statement"
+	}
+  }
+  

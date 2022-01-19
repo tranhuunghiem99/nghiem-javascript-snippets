@@ -1,0 +1,30 @@
+{
+    "author": {
+        "name": "TranHuuNghiem",
+        "email": "tranhuunghiem48@gmail.com",
+        "url": "https://github.com/tranhuunghiem99"
+    },
+    "homepage": "https://github.com/tranhuunghiem99/nghiem-javascript-snippets.git",
+    "name": "nghiem-javascript-snippets",
+    "displayName": "nghiem-javascript-snippets",
+    "description": "Speed code JS by Dr.Nghiem",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
