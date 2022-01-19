@@ -14,7 +14,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/nathanchapman/vscode-javascript-snippets"
+        "url": "https://github.com/tranhuunghiem99/nghiem-javascript-snippets.git"
     },
     "engines": {
         "vscode": "^1.63.0"
